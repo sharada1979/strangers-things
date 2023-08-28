@@ -198,7 +198,7 @@ export async function updatePost(
 //(DELETE /posts/POST_ID) This endpoint will delete a post whose _id is equal to POST_ID. The request will be rejected if it is
 // either missing a valid token, or if the user represented by the token is not the user that created the original post.
 // Note that this API does not delete posts, but rather sets isActive to false
-export async function deletePost(token) {
+export async function deletePost(token, POST_ID) {
   try {
     const response = await fetch(`${BASE_URL}/posts/${POST_ID}`, {
       method: "DELETE",

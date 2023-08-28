@@ -14,8 +14,7 @@ export default function NavBar({ setToken, setUsername }) {
       <NavLink to="/profile">Profile</NavLink>
       <NavLink to="/register">Register</NavLink>
       <NavLink to="/posts">Posts</NavLink>
-      {/* <NavLink to="/messages">Messages</NavLink> */}
-
+      <NavLink to="/messages">Messages</NavLink>
       {localStorage.getItem("token") ? null : (
         <NavLink to="/login">Login</NavLink>
       )}

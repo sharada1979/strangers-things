@@ -6,6 +6,8 @@ import Login from "./components/Login";
 import NavBar from "./components/Nav/NavBar";
 import Profile from "./components/Profile";
 import Post from "./components/Post";
+import { Messages } from "./components/Messages";
+
 export default function App() {
   const [token, setToken] = useState(
     localStorage.getItem("token") ? localStorage.getItem("token") : "" 
